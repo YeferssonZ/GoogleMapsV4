@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".destinos">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Volver a la lista"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200"
+                android:text="DESTINO"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/lblDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblDestino"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textview_bg" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200"
+                android:text="COORDENADAS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/lblCoordenadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblCoordenadas"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textview_bg" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200"
+                android:text="INFORMACION"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/lblInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblInfo"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textview_bg" />
+
+            <ImageView
+                android:id="@+id/imgDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="300dp"
+                android:maxHeight="300dp"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
